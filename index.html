@@ -1,7 +1,175 @@
-<!DOCTYPE html>
-<html>
-<body>
-    <h1>Hello! I am polo</h1>
-    <p>This is my GitHub Pages personal homepage.</p>
-</body>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Polo 的个人简历与项目介绍：系统软件、虚拟化网络、macOS 客户端、AI 工程化，工作经历、专利成果与开源项目。" />
+    <title>Polo · 个人简历与项目</title>
+    <link rel="canonical" href="https://zongyangbigpolo.github.io/" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <h1>Polo</h1>
+      <p>资深系统软件工程师 / 虚拟化网络 / macOS 客户端 / AI 工程化</p>
+      <p>GitHub：<a href="https://github.com/zongyangbigpolo">github.com/zongyangbigpolo</a></p>
+      <nav aria-label="页面目录">
+        <a href="#about">个人简介</a>
+        <a href="#skills">技术能力</a>
+        <a href="#experience">工作经历</a>
+        <a href="#education">教育背景</a>
+        <a href="#recognition">专利与软著</a>
+        <a href="#projects">个人项目</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">个人简介</h2>
+        <p>自 2016 年起从事系统软件研发，长期深耕网络转发、虚拟化、DPU、macOS 客户端与多媒体会话方向。具备从底层驱动、内核网络栈、硬件卸载到客户端工程化的跨栈开发经验，能够参与功能设计、性能调优、问题定位和版本交付的完整过程。</p>
+        <p>近年来将工作延伸到 AI 工程化，实践多智能体协作、MCP 接入、自然语言驱动的自动化测试，以及从崩溃报告到问题分析和代码修复的自动化流程。持续参与开源贡献、源码阅读和技术文档整理。</p>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">技术能力</h2>
+        <ul>
+          <li><strong>编程语言与平台：</strong>C、C++、Objective-C、Swift、Go、Python；具备 macOS 客户端、Linux 内核与跨平台软件开发经验。</li>
+          <li><strong>系统、网络与虚拟化：</strong>Linux 内核网络栈、OVS、DPDK、SR-IOV、RDMA / RoCEv2、QUIC、VXLAN、POP Selection 与多节点接入调度；具备 QEMU、KVM、VPP、RYU、OpenStack 等开源组件实践经验。</li>
+          <li><strong>客户端与多媒体：</strong>GPU 加速视频处理、YUV444、H.264 / H.265 编解码、网络摄像头重定向、自适应传输、远程会话认证、跨平台代理检测与 PAC 解析。</li>
+          <li><strong>调试与工程工具：</strong>iPerf、ASan、Intel VTune、GDB、KDB、PCIe Debug、反汇编、JTAG、Xcode、Sentry、AppCenter、Jenkins；覆盖性能分析、驱动调试、崩溃定位、覆盖率收集与构建发布。</li>
+          <li><strong>AI 工程化：</strong>Agent Harness、多智能体协作、MCP 工具接入、AI 自动化测试；实践 YOLO、OCR、TensorFlow LSTM 与 Actor-Critic 模型在会话分析和视频处理中的应用。</li>
+          <li><strong>开源贡献：</strong>CrossDesk、minirtc 核心贡献者，参与 openEuler 内核代码合入，组织 OVS 源码走读并持续输出技术文档。</li>
+        </ul>
+      </section>
+
+      <!-- Keep the current employer anonymized; omit private contact details, portrait and original resume. -->
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">工作经历</h2>
+
+        <article>
+          <h3>xxx · Senior Software Engineer</h3>
+          <p class="entry-meta"><time datetime="2023-05">2023.05</time> — 至今｜服务端 / macOS 客户端 / 远程会话</p>
+          <p>负责服务端与 macOS 客户端研发，覆盖多媒体处理、网络传输、认证、部署及工程工具链。服务端团队业务代码行数全组第一，转入客户端团队后代码贡献位列前三。</p>
+          <ul>
+            <li><strong>多媒体链路：</strong>负责 GPU 加速的 YUV444 视频格式编解码、水印融合、网络摄像头重定向，以及 H.264 / H.265 编解码能力开发。</li>
+            <li><strong>网络与传输优化：</strong>负责 EDT lossy 传输、自适应图像编码速率调节、远端会话带宽检测、网络节点 DNS 缓存与远程会话直连优化。</li>
+            <li><strong>认证与部署：</strong>支持远程桌面的 Passkey / WebAuthn 认证，优化 Touch ID 认证流程；负责 Jamf Pro 远端部署、MDM 配置下发、版本打包与发布升级，支撑客户现场及在线问题定位。</li>
+            <li><strong>工程工具链：</strong>负责会话监控工具的 SQLite / PostgreSQL 数据库配置读写；搭建 Swift / Objective-C / C 多语言覆盖率收集框架，优化 Xcode 工程与 dSYM 管理，集成 Sentry、AppCenter 崩溃报告。</li>
+            <li><strong>独立开发：</strong>开发跨平台代理检测与 PAC 解析组件，代码规模约 8 万行；负责服务端安装包与配套应用的全部 UI 设计和开发。</li>
+          </ul>
+          <h4>AI 工程化与自动化实践</h4>
+          <ul>
+            <li><strong>会话行为分析：</strong>在时光轴项目中，结合 YOLO 视频帧分解、OCR 文本提取、正则匹配与 TensorFlow LSTM 行为模式推断，实现会话行为分析和 WCF 云端数据传输。</li>
+            <li><strong>低延迟插帧：</strong>基于 VideoToolbox LFSR 预测帧与 A3C Actor-Critic 模型，实现帧预测生成与异步质量评估。</li>
+            <li><strong>AI Harness：</strong>独立搭建所在分公司的首套 AI Harness 层，覆盖 Claude Harness、Copilot VS Code Marketplace Harness 与 Agent Harness。</li>
+            <li><strong>自动化测试：</strong>将远程会话封装为 MCP 工具接入 Claude，搭建自然语言驱动的自动化测试框架。</li>
+            <li><strong>崩溃处理自动化：</strong>串联 Sentry、Jira 和 GitHub，构建 Crash 自动转 Issue、AI 分析并提交 PR 的定时工作流。</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>星云智联科技有限公司</h3>
+          <p class="entry-meta"><time datetime="2021-08">2021.08</time> — <time datetime="2023-05">2023.05</time>｜DPU / OVS / FPGA / ASIC / 内核驱动</p>
+          <p>随原团队加入 DPU 创业公司，负责网络转发与软硬件协同研发，绩效位于组内前列。</p>
+          <ul>
+            <li><strong>流表卸载与驱动：</strong>负责 OVS 流表 FPGA 卸载设计与开发、4×10G 标卡项目的 PMD 驱动（SR-IOV、Mailbox、MSI-X），以及 Leonis ASIC 芯片内核驱动开发。</li>
+            <li><strong>性能与平台适配：</strong>参与 Bootis 转发调优、云原生 etcd 监控、Marvell CN96 板卡移植、证券低延迟链路调优和 ARM SoC 板卡开发，支撑客户线上问题定位与修复。</li>
+            <li><strong>软硬件协同：</strong>支持 SR-IOV、TC flower、Bonding、XDP、Checksum Offload 等能力；参与 ASIC TOP 原型验证与类 DOCA 软硬件交互平台预研。</li>
+            <li><strong>知识分享与开源：</strong>发起 OVS 源码走读活动，个人注释 80% 以上 OVS 源码并输出十余篇技术文档；负责代码合入 openEuler 内核：<a href="https://gitee.com/openeuler/kernel/pulls/570">kernel PR #570</a>、<a href="https://gitee.com/src-openeuler/kernel/pulls/1033">src-openeuler PR #1033</a>。</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>中新赛克</h3>
+          <p class="entry-meta"><time datetime="2020-06">2020.06</time> — <time datetime="2021-08">2021.08</time>｜平台项目 / 协议解析 / 规则模块</p>
+          <p>平台项目核心组员、规则模块负责人，绩效全组第一。</p>
+          <ul>
+            <li>负责协议解析 Bundle、引擎相关代码及规则模块开发，参与数据抓取、解析、过滤全链路建设。</li>
+            <li>在网卡上独立移植 Hicut、HFA、RE2 等开源算法，完成相关算法与平台处理链路的适配。</li>
+            <li>参与海外交付与国产化网卡移植等紧急项目，支撑客户在线问题定位和应急处理。</li>
+            <li>负责《代码升级 1.3 项目》中 Bundle、DPP 及全部规则模块代码。</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>新华三技术有限公司 · 安全策略组</h3>
+          <p class="entry-meta"><time datetime="2016-06">2016.06</time> — <time datetime="2020-06">2020.06</time>｜内核转发 / 安全策略 / DPDK 预研</p>
+          <p>担任维护与集采紧急开发第一责任人，多年绩效位于全组前 20%。</p>
+          <ul>
+            <li>负责 IPv6 嵌套报文头解析、安全策略引用项流量统计、ATK 安全策略抗 DDoS、ASPF 等模块的开发与维护。</li>
+            <li><strong>算法突破与专利嘉奖：</strong>独立完成安全策略匹配算法关键技术突破，将 128 位地址聚合展开到二叉树，结合 Trie + Hash 实现内核五元组掩码匹配算法；作为独立发明人产出发明专利<a href="https://patents.google.com/patent/CN109951495B/zh">《网段查找方法及装置》（CN109951495B）</a>，并因此获得公司嘉奖。该专利于 2021 年 10 月获授权公告。</li>
+            <li>负责内核转发 Cache 优化项目，参与安全策略导入导出、策略分组、虚拟化预研、DPDK 转发预研与移植，以及 V9 安全策略等项目。</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">教育背景</h2>
+        <h3>江南大学 · 通信工程</h3>
+        <p class="entry-meta"><time datetime="2012-09">2012.09</time> — <time datetime="2016-06">2016.06</time>｜211 全日制统招本科</p>
+        <ul>
+          <li>2014.11：江苏省机器人大赛团体一等奖，交叉足机器人项目组员。</li>
+          <li>2013.09：大学生创新实践基地大赛二等奖，自动倒车入库小车项目负责人。</li>
+          <li>2012.12：校园微电影大赛二等奖，作为文艺委员主导剧本创作、拍摄统筹、演员组织、表演与编舞设计。</li>
+        </ul>
+      </section>
+
+      <section id="recognition" aria-labelledby="recognition-title">
+        <h2 id="recognition-title">专利与软件著作权</h2>
+        <h3>发明专利</h3>
+        <p>研究成果主要涉及网络安全、流表管理、流量转发和 DPU 软硬件协同。以下按申请去重列出 9 项专利的授权公告链接，不重复计算同一申请的公开与授权版本；最新法律状态以公开记录为准。</p>
+        <h4>星云智联（申请人：深圳星云智联科技有限公司）</h4>
+        <ol class="patent-list">
+          <li><a href="https://patents.google.com/patent/CN115314297B/zh">CN115314297B</a>：一种 DDOS 攻击防御方法、装置、设备和存储介质。<br />发明人：李保国、闫彬、孙路遥；本人为第一发明人。</li>
+          <li><a href="https://patents.google.com/patent/CN115277553B/zh">CN115277553B</a>：一种流表存储方法、装置、设备和计算机可读存储介质。<br />发明人：李保国、钱情明、孙路遥；本人为第一发明人。</li>
+          <li><a href="https://patents.google.com/patent/CN114884883B/zh">CN114884883B</a>：流量转发方法、装置、设备和存储介质。<br />发明人：李保国、黄祥祥、孙路遥；本人为第一发明人。</li>
+          <li><a href="https://patents.google.com/patent/CN114915587B/zh">CN114915587B</a>：流表老化管理方法及相关设备。<br />发明人：彭雪娇、李保国、孙路遥；本人为第二发明人。</li>
+          <li><a href="https://patents.google.com/patent/CN114726788B/zh">CN114726788B</a>：应用于 DPU 的报文传输方法及相关装置。<br />发明人：李保国、黄祥祥、孙路遥；本人为第一发明人。</li>
+          <li><a href="https://patents.google.com/patent/CN114448891B/zh">CN114448891B</a>：流表同步方法、装置、设备和介质。<br />发明人：黄祥祥、李保国、孙路遥；本人为第二发明人。</li>
+        </ol>
+        <h4>新华三（申请人：新华三信息安全技术有限公司）</h4>
+        <ol class="patent-list" start="7">
+          <li><a href="https://patents.google.com/patent/CN110474929B/zh">CN110474929B</a>：冗余规则检测方法和装置，独立发明人。</li>
+          <li><a href="https://patents.google.com/patent/CN109951393B/zh">CN109951393B</a>：网段搜索方法和装置，独立发明人。</li>
+          <li><a href="https://patents.google.com/patent/CN109951495B/zh">CN109951495B</a>：网段查找方法及装置，独立发明人，相关成果获得公司嘉奖。</li>
+        </ol>
+        <h3>软件著作权</h3>
+        <ul>
+          <li>DPDK PMD 驱动网络转发软件 V1.0（2022SR1434483）。</li>
+          <li>封闭开发环境下的代码质量管理软件 V1.0（2022SR1437331）。</li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">个人项目</h2>
+        <p>以下是我在 GitHub 上维护的部分项目，涵盖远程桌面、跨平台基础库和 AI 应用。具体功能及开发进展以各仓库 README 为准。</p>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/NebulaDesk">NebulaDesk</a> · 跨平台远程桌面</h3>
+          <p>基于 Rust、Tauri 和 QUIC，面向 macOS、Windows、Linux 提供设备管理、访问授权和独立原生远程会话窗口，采用端到端加密传输。管理界面与原生音视频链路分离；单应用窗口串流尚未实现。</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/Nexus">Nexus</a> · 多智能体工程协作</h3>
+          <p>面向 VS Code 与 GitHub Copilot 的多智能体协作层，通过模块化插件组织需求分析、规格设计、任务拆分、实现、代码审查、测试和发布工作。支持在 Copilot Chat 中使用命令，将需求到交付的多个环节串联起来。</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/awesome-ai-roadmap">awesome-ai-roadmap</a> · AI 知识图谱</h3>
+          <p>面向 AI 工程学习与面试准备的中文知识库，覆盖 LLM、多模态、Agent、RAG、MCP、框架编排、评测及安全治理。按主题组织概念、工程取舍和学习路径，通过 MkDocs 发布为可搜索的 <a href="https://zongyangbigpolo.github.io/awesome-ai-roadmap/">在线 Wiki</a>。</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/rustproxyparser">rustproxyparser</a> · 跨平台代理解析库</h3>
+          <p>使用 Rust 实现的代理解析库与命令行工具，读取环境变量及 macOS、Windows、Linux 系统代理配置，加载并执行 PAC 脚本，为目标 URL 返回规范化代理结果，支持代理去重、协议过滤和 DIRECT 回退语义。</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/ModernNovel">ModernNovel</a> · AI 小说创作工作台</h3>
+          <p>使用 TypeScript、React 和 Cloudflare Workers 构建，将章节编辑、人物与世界观设定、故事画布、写作技巧、风格记忆和多模型 AI 助手整合到同一工作空间。当前处于 POC 阶段，提供<a href="https://modernnovel.zongyangpolo.workers.dev/">在线体验</a>。</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/Super-Polo-Custom-LLM-Builder">Super Polo</a> · 个性化大模型构建</h3>
+          <p>探索在本地部署开源大模型，结合个人对话记录与公开数据进行微调，使模型学习特定的表达方式、语气与聊天风格，关注数据隐私、本地运行和个性化对话体验。</p>
+        </article>
+        <p><a href="https://github.com/zongyangbigpolo?tab=repositories">查看全部公开仓库</a></p>
+      </section>
+    </main>
+  </body>
 </html>
