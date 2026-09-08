@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Polo's resume and projects: systems software, virtualized networking, macOS clients, AI engineering, work experience, patents, and open-source projects." />
+    <title>Polo | Resume and Projects</title>
+    <link rel="canonical" href="https://zongyangbigpolo.github.io/en.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://zongyangbigpolo.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://zongyangbigpolo.github.io/en.html" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="profile-heading">
+        <h1>Polo</h1>
+        <a class="language-switch" href="./" lang="zh-CN" hreflang="zh-CN">中文版</a>
+      </div>
+      <p>GitHub: <a href="https://github.com/zongyangbigpolo">github.com/zongyangbigpolo</a></p>
+      <nav aria-label="Page contents">
+        <a href="#about">About</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#recognition">Patents and Copyrights</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>I have worked in systems software development since 2016, focusing on network forwarding, virtualization, DPUs, macOS clients, and multimedia sessions. My experience spans device drivers, kernel networking, hardware offload, and client application engineering, from feature design and performance optimization to troubleshooting and release delivery.</p>
+        <p>More recently, I have extended this work into AI engineering: multi-agent collaboration, MCP integration, natural-language-driven automated testing, and workflows that connect crash reports with issue analysis and code fixes. I also contribute to open-source projects, study source code, and write technical documentation.</p>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical Skills</h2>
+        <ul>
+          <li><strong>Languages and platforms:</strong> C, C++, Objective-C, Swift, Go, and Python; macOS client development, Linux kernel development, and cross-platform software.</li>
+          <li><strong>Systems, networking, and virtualization:</strong> Linux kernel networking, OVS, DPDK, SR-IOV, RDMA / RoCEv2, QUIC, VXLAN, point-of-presence selection, and multi-node connection scheduling; hands-on experience with QEMU, KVM, VPP, RYU, and OpenStack.</li>
+          <li><strong>Clients and multimedia:</strong> GPU-accelerated video processing, YUV444, H.264 / H.265 encoding and decoding, webcam redirection, adaptive transport, remote session authentication, cross-platform proxy detection, and PAC parsing.</li>
+          <li><strong>Debugging and engineering tools:</strong> iPerf, ASan, Intel VTune, GDB, KDB, PCIe debugging, disassembly, JTAG, Xcode, Sentry, AppCenter, and Jenkins; performance profiling, driver debugging, crash analysis, coverage collection, builds, and releases.</li>
+          <li><strong>AI engineering:</strong> Agent harnesses, multi-agent collaboration, MCP tool integration, and AI-driven automated testing; practical use of YOLO, OCR, TensorFlow LSTM, and Actor-Critic models for session analysis and video processing.</li>
+          <li><strong>Open-source contributions:</strong> Core contributor to CrossDesk and minirtc; contributed kernel changes to openEuler, organized OVS source-code walkthroughs, and produced technical documentation.</li>
+        </ul>
+      </section>
+
+      <!-- Keep the current employer anonymized; omit private contact details, portrait and original resume. -->
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+
+        <article>
+          <h3>xxx</h3>
+          <p class="entry-meta"><time datetime="2023-05">May 2023</time> - Present | Server Software / macOS Clients / Remote Sessions</p>
+          <p>Develop server software and macOS clients across multimedia processing, network transport, authentication, deployment, and engineering tools. Ranked first in the server team by lines of business code contributed and among the top three contributors after moving to the client team.</p>
+          <ul>
+            <li><strong>Multimedia:</strong> Develop GPU-accelerated YUV444 video encoding and decoding, watermark compositing, webcam redirection, and H.264 / H.265 codec capabilities.</li>
+            <li><strong>Networking and transport:</strong> Work on EDT lossy transport, adaptive image encoding rates, remote session bandwidth detection, DNS caching for network nodes, and direct remote session connection optimization.</li>
+            <li><strong>Authentication and deployment:</strong> Enable Passkey / WebAuthn authentication for remote desktops and optimize Touch ID flows. Handle remote deployment through Jamf Pro, MDM configuration delivery, packaging, releases, and upgrades; troubleshoot customer issues remotely.</li>
+            <li><strong>Engineering tools:</strong> Implement SQLite / PostgreSQL configuration access for session monitoring tools. Build a coverage collection framework across Swift, Objective-C, and C; improve Xcode projects and dSYM management; integrate Sentry and AppCenter crash reporting.</li>
+            <li><strong>Independent development:</strong> Build a cross-platform proxy detection and PAC parsing component comprising approximately 80,000 lines of code. Design and implement the complete UI for the server installer and its companion application.</li>
+          </ul>
+          <h4>AI Engineering and Automation</h4>
+          <ul>
+            <li><strong>Session behavior analysis:</strong> Combine YOLO-based video frame analysis, OCR text extraction, regular expressions, and TensorFlow LSTM behavior inference in a timeline analysis project, with WCF-based cloud data transfer.</li>
+            <li><strong>Low-latency frame interpolation:</strong> Use VideoToolbox LFSR frame prediction and an A3C Actor-Critic model for predictive frame generation and asynchronous quality assessment.</li>
+            <li><strong>AI harnesses:</strong> Independently build the branch office's first AI harness layer, covering Claude Harness, Copilot VS Code Marketplace Harness, and Agent Harness.</li>
+            <li><strong>Automated testing:</strong> Expose remote sessions as MCP tools for Claude and build a natural-language-driven automated testing framework.</li>
+            <li><strong>Crash workflow automation:</strong> Connect Sentry, Jira, and GitHub in scheduled workflows that turn crashes into issues, perform AI-assisted analysis, and submit pull requests.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Xingyun Zhilian Technology Co., Ltd.</h3>
+          <p class="entry-meta"><time datetime="2021-08">Aug 2021</time> - <time datetime="2023-05">May 2023</time> | DPU / OVS / FPGA / ASIC / Kernel Drivers</p>
+          <p>Joined a DPU startup with my former team, developing network forwarding and hardware-software integration. Performance ranked among the top members of the team.</p>
+          <ul>
+            <li><strong>Flow offload and drivers:</strong> Designed and implemented FPGA offload for OVS flow tables, PMD drivers for a four-port 10G network adapter using SR-IOV, Mailbox, and MSI-X, and kernel drivers for the Leonis ASIC.</li>
+            <li><strong>Performance and platform adaptation:</strong> Contributed to Bootis forwarding optimization, cloud-native etcd monitoring, Marvell CN96 board porting, low-latency trading network optimization, and ARM SoC board development; diagnosed and resolved customer issues remotely.</li>
+            <li><strong>Hardware-software integration:</strong> Supported SR-IOV, TC flower, bonding, XDP, and checksum offload. Participated in ASIC TOP prototype validation and research into a DOCA-like hardware-software interaction platform.</li>
+            <li><strong>Knowledge sharing and open source:</strong> Initiated OVS source-code walkthroughs, personally annotated more than 80% of the OVS source, and wrote over ten technical documents. Contributed changes merged into the openEuler kernel: <a href="https://gitee.com/openeuler/kernel/pulls/570">kernel PR #570</a> and <a href="https://gitee.com/src-openeuler/kernel/pulls/1033">src-openeuler PR #1033</a>.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Sinovatio</h3>
+          <p class="entry-meta"><time datetime="2020-06">Jun 2020</time> - <time datetime="2021-08">Aug 2021</time> | Platform Development / Protocol Parsing / Rule Modules</p>
+          <p>Core member of the platform project and owner of the rule module, with the highest performance rating in the team.</p>
+          <ul>
+            <li>Developed protocol parsing bundles, engine code, and rule modules across the data collection, parsing, and filtering pipeline.</li>
+            <li>Independently ported open-source algorithms including Hicut, HFA, and RE2 to network adapters and integrated them into the platform's processing pipeline.</li>
+            <li>Contributed to urgent overseas delivery projects and porting to domestically developed network adapters, providing remote troubleshooting and incident response.</li>
+            <li>Owned the Bundle, DPP, and all rule-module code in the Code Upgrade 1.3 project.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>H3C Technologies Co., Ltd. | Security Policy Team</h3>
+          <p class="entry-meta"><time datetime="2016-06">Jun 2016</time> - <time datetime="2020-06">Jun 2020</time> | Kernel Forwarding / Security Policies / DPDK Research</p>
+          <p>Primary owner for maintenance and urgent development supporting centralized procurement projects. Performance ranked in the team's top 20% over multiple years.</p>
+          <ul>
+            <li>Developed and maintained IPv6 nested-header parsing, traffic statistics for security policy reference objects, ATK anti-DDoS security policies, and ASPF modules.</li>
+            <li><strong>Algorithm development and recognition:</strong> Independently developed a security policy matching algorithm by expanding aggregated 128-bit addresses into a binary tree and combining Trie and Hash techniques for kernel five-tuple masked matching. Sole inventor of <a href="https://patents.google.com/patent/CN109951495B/en">Network Segment Lookup Method and Apparatus (CN109951495B)</a>; received company recognition for this work.</li>
+            <li>Owned the kernel forwarding cache optimization project. Contributed to security policy import/export, policy grouping, virtualization research, DPDK forwarding research and porting, and V9 security policies.</li>
+            <li><strong>Containerization:</strong> Helped migrate business services to containers, using Docker for service deployment and runtime management.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <h3>Jiangnan University | Communication Engineering</h3>
+        <p class="entry-meta"><time datetime="2012-09">Sep 2012</time> - <time datetime="2016-06">Jun 2016</time> | Full-time Bachelor's Degree | Project 211 University</p>
+        <ul>
+          <li>Nov 2014: Team First Prize, Jiangsu Provincial Robotics Competition; team member on a cross-legged robot project.</li>
+          <li>Sep 2013: Second Prize, University Student Innovation Practice Base Competition; led an autonomous reverse-parking vehicle project.</li>
+          <li>Dec 2012: Second Prize, Campus Short Film Competition; led scriptwriting, production coordination, casting, performance, and choreography as the class arts representative.</li>
+        </ul>
+      </section>
+
+      <section id="recognition" aria-labelledby="recognition-title">
+        <h2 id="recognition-title">Patents and Software Copyrights</h2>
+        <h3>Patents</h3>
+        <ol class="patent-list">
+          <li><a href="https://patents.google.com/patent/CN115314297B/en">DDoS Attack Defense Method, Apparatus, Device, and Storage Medium</a></li>
+          <li><a href="https://patents.google.com/patent/CN115277553B/en">Flow Table Storage Method, Apparatus, Device, and Computer-Readable Storage Medium</a></li>
+          <li><a href="https://patents.google.com/patent/CN114884883B/en">Traffic Forwarding Method, Apparatus, Device, and Storage Medium</a></li>
+          <li><a href="https://patents.google.com/patent/CN114915587B/en">Flow Table Aging Management Method and Related Equipment</a></li>
+          <li><a href="https://patents.google.com/patent/CN114726788B/en">Packet Transmission Method for DPUs and Related Apparatus</a></li>
+          <li><a href="https://patents.google.com/patent/CN114448891B/en">Flow Table Synchronization Method, Apparatus, Device, and Medium</a></li>
+          <li><a href="https://patents.google.com/patent/CN110474929B/en">Redundant Rule Detection Method and Apparatus</a></li>
+          <li><a href="https://patents.google.com/patent/CN109951393B/en">Network Segment Search Method and Apparatus</a></li>
+          <li><a href="https://patents.google.com/patent/CN109951495B/en">Network Segment Lookup Method and Apparatus</a></li>
+        </ol>
+        <h3>Software Copyright Registrations</h3>
+        <ul>
+          <li>DPDK PMD Driver Network Forwarding Software V1.0 (2022SR1434483).</li>
+          <li>Code Quality Management Software for Restricted Development Environments V1.0 (2022SR1437331).</li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Personal Projects</h2>
+        <p>Selected projects I maintain on GitHub, covering remote desktops, cross-platform libraries, and AI applications. Each repository's README describes its current features and development status.</p>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/NebulaDesk">NebulaDesk</a> | Cross-platform Remote Desktop</h3>
+          <p>Built with Rust, Tauri, and QUIC for macOS, Windows, and Linux. Provides device management, access control, and standalone native remote session windows with end-to-end encrypted transport. The management UI is separate from the native media pipeline; single-application window streaming is not yet implemented.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/Nexus">Nexus</a> | Multi-agent Engineering Workflows</h3>
+          <p>A multi-agent collaboration layer for VS Code and GitHub Copilot. Modular plugins organize requirements analysis, specifications, task breakdown, implementation, code review, testing, and releases. Commands in Copilot Chat connect these stages into a workflow from requirements to delivery.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/awesome-ai-roadmap">awesome-ai-roadmap</a> | AI Knowledge Map</h3>
+          <p>A Chinese-language knowledge base for AI engineering study and interview preparation, covering LLMs, multimodal AI, agents, RAG, MCP, orchestration frameworks, evaluation, and security governance. Organizes concepts, engineering trade-offs, and learning paths by topic, published as a searchable <a href="https://zongyangbigpolo.github.io/awesome-ai-roadmap/">online wiki</a> with MkDocs.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/rustproxyparser">rustproxyparser</a> | Cross-platform Proxy Resolution</h3>
+          <p>A Rust library and CLI that reads environment variables and system proxy settings on macOS, Windows, and Linux, loads and executes PAC scripts, and returns normalized proxy results for a target URL. Supports deduplication, protocol filtering, and DIRECT fallback semantics.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/ModernNovel">ModernNovel</a> | AI Novel-Writing Workspace</h3>
+          <p>Built with TypeScript, React, and Cloudflare Workers. Combines chapter editing, character and world-building notes, a story canvas, writing skills, style memory, and a multi-model AI assistant in one workspace. Currently a proof of concept, with an <a href="https://modernnovel.zongyangpolo.workers.dev/">online demo</a>.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/zongyangbigpolo/Super-Polo-Custom-LLM-Builder">Super Polo</a> | Personalized LLM Development</h3>
+          <p>Explores local deployment and fine-tuning of open-source language models using personal conversations and public datasets. The goal is to learn an individual's phrasing, tone, and conversational style, with an emphasis on data privacy, local execution, and personalized dialogue.</p>
+        </article>
+        <p><a href="https://github.com/zongyangbigpolo?tab=repositories">View all public repositories</a></p>
+      </section>
+    </main>
+  </body>
+</html>
