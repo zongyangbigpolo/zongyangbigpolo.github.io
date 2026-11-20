@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>李保国-虚拟化系统软件工程师简历</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="toolbar"><a href="./">全部简历</a><a href="./pdf/李保国-虚拟化系统软件工程师简历.pdf">下载 PDF</a></nav>
+    <main class="resume-doc">
+      <section class="resume-page">
+        <aside class="sidebar">
+          <section class="photo-box"><img src="./avatar.jpg" alt="李保国证件照" /></section>
+          <section class="profile-block">
+            <h1>李保国</h1>
+            <p class="target-role">虚拟化 / DPU 系统软件工程师</p>
+            <p class="role-note">I/O 虚拟化｜SR-IOV 驱动｜芯片软硬件协同</p>
+          </section>
+          <section class="info-block">
+            <h2>个人信息</h2>
+            <dl>
+              <div><dt>出生年月</dt><dd>1993.12</dd></div>
+              <div><dt>故乡</dt><dd>安徽省铜陵市</dd></div>
+              <div><dt>电话</dt><dd>176 2604 1192</dd></div>
+              <div><dt>邮箱</dt><dd><a href="mailto:942131590@qq.com">942131590@qq.com</a></dd></div>
+              <div><dt>GitHub</dt><dd><a href="https://github.com/zongyangbigpolo">github.com/zongyangbigpolo</a></dd></div>
+              <div><dt>学历</dt><dd>江南大学 · 通信工程<br />211 全日制本科</dd></div>
+            </dl>
+          </section>
+          <section class="info-block">
+            <h2>虚拟化技术栈</h2>
+            <ul class="tag-list">
+              <li>SR-IOV</li><li>PF/VF Mailbox</li><li>MSI-X</li><li>QEMU</li><li>KVM</li>
+              <li>OVS</li><li>DPDK PMD</li><li>VXLAN</li><li>OpenStack</li><li>VPP</li>
+            </ul>
+          </section>
+          <section class="info-block">
+            <h2>芯片与硬件</h2>
+            <ul class="tag-list">
+              <li>FPGA 卸载</li><li>ASIC 驱动</li><li>ASIC 原型验证</li><li>Marvell CN96</li>
+              <li>ARM SoC</li><li>RDMA/RoCEv2</li><li>TC flower</li><li>XDP</li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="content">
+          <article class="experience-card advantage-card">
+            <div class="entry-divider">职业概述</div>
+            <ul>
+              <li>10 年系统软件研发经验，主线为<strong>网络转发、I/O 虚拟化与 DPU 软硬件协同</strong>，覆盖内核驱动、用户态 PMD、虚拟交换卸载到虚拟桌面产品。</li>
+              <li>在 DPU 创业公司负责 OVS 流表 FPGA 卸载、SR-IOV PMD 驱动与 ASIC 内核驱动，参与 ASIC TOP 原型验证，熟悉芯片从验证到量产落地的软件配套工作。</li>
+              <li>9 项已授权发明专利（5 项围绕 DPU / 流表卸载），代码合入 openEuler 内核，持有 DPDK PMD 驱动软件著作权。</li>
+              <li>能深入客户现场与线上 Oncall，结合 PCIe Debug、JTAG、KDB、反汇编完成驱动与硬件问题定位。</li>
+            </ul>
+          </article>
+          <article class="experience-card fit-card">
+            <div class="entry-divider">半导体虚拟化岗位核心匹配</div>
+            <div class="fit-grid">
+              <p><strong>I/O 虚拟化：</strong>独立实现 SR-IOV PMD 驱动的 PF/VF Mailbox 通信与 MSI-X 中断，具备 QEMU / KVM 虚拟化实践经验。</p>
+              <p><strong>芯片协同：</strong>负责 ASIC 内核驱动、FPGA 流表卸载，参与 ASIC TOP 原型验证与类 DOCA 软硬件交互平台预研。</p>
+              <p><strong>虚拟交换：</strong>注释 80%+ OVS 源码，围绕流表存储、同步、老化与 DPU 报文传输产出多项专利。</p>
+              <p><strong>性能与交付：</strong>完成 Marvell CN96 / ARM SoC 板卡移植和证券低延迟链路调优，支撑客户线上问题闭环。</p>
+            </div>
+          </article>
+          <article class="experience-card">
+            <div class="entry-divider">相关工作经历</div>
+            <div class="experience-header">
+              <div><h4>星云智联科技有限公司</h4><p>DPU 系统软件工程师｜OVS / FPGA / ASIC / 内核驱动</p></div>
+              <time>2021.08—2023.05</time>
+            </div>
+            <p class="highlight">随原团队加入 DPU 创业公司，绩效组内前列；代码合入 openEuler 内核 <a href="https://gitee.com/openeuler/kernel/pulls/570">kernel PR #570</a> / <a href="https://gitee.com/src-openeuler/kernel/pulls/1033">src-openeuler PR #1033</a>。</p>
+            <h3>DPU 卸载与驱动</h3>
+            <ul>
+              <li><strong>OVS 流表 FPGA 卸载：</strong>负责虚拟交换流表下沉到 FPGA 的设计与开发，覆盖流表存储、同步、老化管理与 DPU 报文传输链路。</li>
+              <li><strong>SR-IOV PMD 驱动：</strong>负责 4×10G 标卡项目 DPDK PMD 驱动，实现 SR-IOV、PF/VF Mailbox 与 MSI-X 中断。</li>
+              <li><strong>ASIC 芯片驱动：</strong>负责 Leonis ASIC 芯片内核驱动开发；参与 ASIC TOP 原型验证与类 DOCA 软硬件交互平台预研。</li>
+              <li><strong>硬件卸载能力：</strong>支持 SR-IOV、TC flower、Bonding、XDP、Checksum Offload 等卸载特性。</li>
+            </ul>
+            <h3>平台移植与客户交付</h3>
+            <ul>
+              <li>参与 Marvell CN96 板卡移植、ARM SoC 板卡开发、Bootis 转发调优、某度 BOE 项目、某团云原生 etcd 监控与证券低延迟链路调优。</li>
+              <li>支撑客户线上问题 Oncall 定位与修复；发起 OVS 源码走读，个人注释 80% 以上 OVS 源码并输出十余篇技术文档。</li>
+            </ul>
+            <div class="experience-header">
+              <div><h4>南京思杰云软件系统有限公司（Citrix）</h4><p>Senior Software Engineer｜虚拟桌面服务端 / macOS 客户端 / HDX</p></div>
+              <time>2023.05—至今</time>
+            </div>
+            <p class="highlight"><a href="https://raw.githubusercontent.com/zongyangbigpolo/dazhanxiaokala/main/resume-assets/images/server-code-contributions.jpg">服务端团队业务代码行数全组第一</a>；<a href="https://raw.githubusercontent.com/zongyangbigpolo/dazhanxiaokala/main/resume-assets/images/client-commit-contributions-2025-2026.png">转入客户端团队后代码 commit 全年第一</a>。</p>
+            <ul>
+              <li><strong>虚拟桌面 GPU 加速：</strong>负责 GPU 加速 YUV444 编解码、H.264/H.265 编解码与网络摄像头设备重定向。</li>
+              <li><strong>虚拟会话网络：</strong>负责 EDT lossy 传输、自适应编码速率、会话带宽检测、DNS 缓存与 HDX Direct 直连优化。</li>
+            </ul>
+          </article>
+        </section>
+      </section>
+
+      <section class="resume-page page-two">
+        <aside class="sidebar continuation-sidebar">
+          <section class="profile-block"><h1>李保国</h1><p class="target-role">虚拟化 / DPU 系统软件工程师</p></section>
+          <section class="info-block">
+            <h2>调试工具</h2>
+            <ul class="tag-list tool-tags">
+              <li>PCIe Debug</li><li>JTAG</li><li>KDB</li><li>GDB</li><li>反汇编</li>
+              <li>Intel VTune</li><li>iPerf</li><li>ASan</li>
+            </ul>
+          </section>
+          <section class="info-block">
+            <h2>编程语言</h2>
+            <ul class="tag-list tool-tags">
+              <li>C（主力）</li><li>C++</li><li>Go</li><li>Python</li><li>Shell</li>
+            </ul>
+          </section>
+          <section class="info-block">
+            <h2>研究方向</h2>
+            <ul class="tag-list">
+              <li>vSwitch 卸载</li><li>智能网卡</li><li>DPU</li>
+              <li>低延迟转发</li><li>虚拟桌面</li><li>国产化移植</li>
+            </ul>
+          </section>
+          <section class="info-block">
+            <h2>开源实践</h2>
+            <ul class="tag-list tool-tags">
+              <li>openEuler 内核</li><li>OVS</li><li>DPDK</li><li>QEMU</li>
+              <li>KVM</li><li>VPP</li><li>RYU</li><li>OpenStack</li>
+            </ul>
+          </section>
+          <section class="info-block compact-text">
+            <h2>成果摘要</h2>
+            <ul>
+              <li>发明专利 9 项（授权）</li>
+              <li>软件著作权 2 项</li>
+              <li>openEuler 内核合入 2 个 PR</li>
+              <li>OVS 技术文档 10+ 篇</li>
+            </ul>
+          </section>
+        </aside>
+        <section class="content">
+          <article class="experience-card advantage-card">
+            <div class="entry-divider">工作经历（续）</div>
+            <div class="experience-header">
+              <div><h4>中新赛克</h4><p>平台项目核心组员｜协议解析 / 规则模块负责人</p></div>
+              <time>2020.06—2021.08</time>
+            </div>
+            <p class="highlight">绩效全组第一。</p>
+            <ul>
+              <li>在网卡上独立移植 Hicut、HFA、RE2 等匹配算法，完成算法与网卡处理链路适配；参与国产化网卡移植。</li>
+              <li>负责协议解析 Bundle、引擎及规则模块，覆盖数据抓取、解析、过滤全链路；负责《代码升级 1.3 项目》Bundle、DPP 及全部规则模块代码。</li>
+              <li>参与赞比亚、哈萨克斯坦、坦桑尼亚等海外紧急交付项目，支撑客户在线问题定位与应急处理。</li>
+            </ul>
+            <div class="experience-header">
+              <div><h4>新华三技术有限公司 · 安全策略组</h4><p>软件工程师｜内核转发 / 安全策略 / DPDK 预研</p></div>
+              <time>2016.06—2020.06</time>
+            </div>
+            <p class="highlight">维护与集采紧急开发第一责任人，多年绩效全组前 20%。</p>
+            <ul>
+              <li><strong>虚拟化与转发预研：</strong>参与虚拟化预研、DPDK 转发预研与移植、业务 Docker 容器化移植；负责内核转发 Cache 优化。</li>
+              <li><strong>算法突破：</strong>将 128 位地址聚合展开到二叉树，结合 Trie + Hash 实现内核五元组掩码匹配算法，作为独立发明人获专利 <a href="https://patents.google.com/patent/CN109951495B/zh">CN109951495B</a> 并获公司嘉奖。</li>
+              <li>负责 IPv6 嵌套报文头解析、安全策略引用项流量统计、ATK 抗 DDoS、ASPF 等模块开发与维护。</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <div class="entry-divider">发明专利（已授权）</div>
+            <ol class="patent-grid">
+              <li><a href="https://patents.google.com/patent/CN114726788B/zh">应用于 DPU 的报文传输方法</a></li>
+              <li><a href="https://patents.google.com/patent/CN115277553B/zh">流表存储方法、装置、设备</a></li>
+              <li><a href="https://patents.google.com/patent/CN114448891B/zh">流表同步方法、装置、设备</a></li>
+              <li><a href="https://patents.google.com/patent/CN114915587B/zh">流表老化管理方法及相关设备</a></li>
+              <li><a href="https://patents.google.com/patent/CN114884883B/zh">流量转发方法、装置、设备</a></li>
+              <li><a href="https://patents.google.com/patent/CN115314297B/zh">DDoS 攻击防御方法、装置</a></li>
+              <li><a href="https://patents.google.com/patent/CN110474929B/zh">冗余规则检测方法和装置</a></li>
+              <li><a href="https://patents.google.com/patent/CN109951393B/zh">网段搜索方法和装置</a></li>
+              <li><a href="https://patents.google.com/patent/CN109951495B/zh">网段查找方法及装置</a></li>
+            </ol>
+          </article>
+          <article class="experience-card">
+            <div class="entry-divider">软件著作权</div>
+            <ul>
+              <li>DPDK PMD 驱动网络转发软件 V1.0（2022SR1434483）</li>
+              <li>封闭开发环境下的代码质量管理软件 V1.0（2022SR1437331）</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <div class="entry-divider">教育背景</div>
+            <div class="education-row">
+              <div><h4>江南大学</h4><p>通信工程｜211 全日制统招本科</p></div><time>2012.09—2016.06</time>
+            </div>
+            <ul>
+              <li>江苏省机器人大赛团体一等奖（交叉足机器人）；大学生创新实践基地大赛二等奖（自动倒车入库小车，负责人）。</li>
+            </ul>
+          </article>
+          <article class="experience-card summary-card">
+            <div class="entry-divider">个人评价</div>
+            <p>从内核转发、DPU 硬件卸载一路做到虚拟桌面产品，既能写芯片驱动，也能面对客户定位线上问题。对 I/O 虚拟化与软硬件协同有完整的工程闭环经验，自驱力强，乐于通过源码走读与文档沉淀带动团队。</p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

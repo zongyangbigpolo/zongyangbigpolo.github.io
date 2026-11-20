@@ -1,0 +1,88 @@
+:root {
+  --page-bg: #f2f4f7;
+  --paper: #fff;
+  --ink: #17202a;
+  --muted: #637083;
+  --soft: #edf1f5;
+  --line: #dce2e8;
+  --accent: #173f67;
+  --accent-soft: #eaf1f7;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+a { color: var(--accent); text-decoration: underline; text-decoration-color: #9db3c8; text-underline-offset: 2px; }
+.toolbar { display: flex; justify-content: center; gap: 16px; padding: 18px 0 0; font-size: 13px; }
+.resume-doc { display: grid; gap: 24px; padding: 24px 0; }
+.resume-page {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  padding: 13mm 15mm;
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 0 24px 80px rgb(15 23 42 / 12%);
+}
+.sidebar { border-right: 1px solid var(--line); padding-right: 16px; }
+.photo-box {
+  width: 100px;
+  height: 140px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft);
+}
+.photo-box img { width: 100%; height: 100%; object-fit: cover; }
+.profile-block h1 { margin: 0; color: var(--accent); font-size: 27px; font-weight: 700; letter-spacing: .05em; }
+.target-role { margin: 7px 0 0; color: var(--ink); font-size: 12.5px; font-weight: 600; line-height: 1.5; }
+.role-note { margin: 3px 0 0; color: #8290a0; font-size: 10px; line-height: 1.5; }
+.info-block { margin-top: 16px; }
+.info-block h2 { margin: 0 0 7px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+dl { margin: 0; }
+dl div { padding: 4px 0; border-bottom: 1px solid var(--soft); }
+dt { margin-bottom: 1px; color: var(--muted); font-size: 9.5px; }
+dd { margin: 0; font-size: 10.5px; line-height: 1.45; overflow-wrap: anywhere; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.tag-list li { padding: 4px 7px; border-radius: 999px; background: var(--accent-soft); color: #29445e; font-size: 9.8px; line-height: 1.1; }
+.tool-tags li { border: 1px solid var(--line); background: transparent; color: #394756; }
+.compact-text p, .compact-text li { margin: 4px 0; color: #394756; font-size: 10.2px; line-height: 1.5; }
+.compact-text ul { margin: 0; padding-left: 14px; }
+.continuation-sidebar { padding-top: 4px; }
+.content { min-width: 0; }
+.experience-card { padding: 8px 0 10px; }
+.advantage-card { padding-top: 0; }
+.entry-divider { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.entry-divider::after { display: block; flex: 1; height: 1px; background: var(--line); content: ""; }
+.experience-header, .education-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+.experience-header + .experience-header, ul + .experience-header { margin-top: 10px; }
+.experience-header h4, .education-row h4 { margin: 0; color: var(--accent); font-size: 13.5px; font-weight: 700; }
+.experience-header p, .education-row p { margin: 3px 0 0; color: var(--muted); font-size: 11px; }
+time { flex: 0 0 auto; color: var(--muted); font-size: 10.5px; white-space: nowrap; }
+.highlight { margin: 6px 0 0; padding: 5px 9px; border-left: 3px solid var(--accent); background: var(--accent-soft); color: #29445e; font-size: 10.8px; line-height: 1.5; }
+.experience-card h3 { margin: 8px 0 0; color: var(--accent); font-size: 11.8px; font-weight: 700; }
+.experience-card ul, .experience-card ol { margin: 5px 0 0; padding-left: 16px; }
+.experience-card li { margin: 4px 0; color: #2c3540; font-size: 11.5px; line-height: 1.6; text-align: justify; }
+.experience-card li strong { color: var(--accent); }
+.fit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 16px; }
+.fit-grid p, .summary-card p { margin: 0; color: #2c3540; font-size: 11.4px; line-height: 1.6; text-align: justify; }
+.fit-grid strong { color: var(--accent); }
+.patent-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
+.patent-grid li { font-size: 10.5px; }
+
+@media print {
+  @page { size: A4; margin: 0; }
+  body { background: #fff; }
+  .toolbar { display: none; }
+  .resume-doc { display: block; padding: 0; }
+  .resume-page { margin: 0; box-shadow: none; break-after: page; }
+  .resume-page:last-child { break-after: auto; }
+}
