@@ -60,7 +60,7 @@ body {
 .contact-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px 22px;
+  gap: 8px 22px;
   max-width: 580px;
   margin: 0;
   padding: 0;
@@ -76,12 +76,12 @@ body {
 .photo-box {
   display: grid;
   flex: 0 0 auto;
-  width: 114px;
-  height: 160px;
+  width: 104px;
+  height: 132px;
   place-items: center;
   overflow: hidden;
   border: 1px solid #e2e2df;
-  border-radius: 10px;
+  border-radius: 18px;
   background: #f2f2f0;
   color: #9a9a94;
   font-size: 12px;
