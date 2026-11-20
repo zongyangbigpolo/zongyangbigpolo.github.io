@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="robots" content="noindex" />
+    <title>Polo · 简历 · 虚拟化工程师（半导体 / DPU）</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Polo</h1>
+      <p class="entry-meta">求职意向：虚拟化工程师（半导体 / DPU / 智能网卡方向）｜系统软件 10 年经验</p>
+      <p>GitHub：<a href="https://github.com/zongyangbigpolo">github.com/zongyangbigpolo</a></p>
+    </header>
+
+    <main>
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">个人简介</h2>
+        <p>自 2016 年起从事系统软件研发，主线为网络转发、I/O 虚拟化与 DPU 软硬件协同。具备 SR-IOV、PMD 驱动、ASIC 内核驱动、OVS 流表 FPGA 卸载、PCIe 调试与 ARM SoC 板卡移植的一线经验，能够从芯片原型验证、驱动开发、虚拟交换到客户线上问题定位完成完整闭环。</p>
+        <p>拥有 9 项已授权发明专利（其中 5 项围绕 DPU / 流表卸载），代码合入 openEuler 内核，持有 DPDK PMD 驱动相关软件著作权。</p>
+      </section>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">核心技能</h2>
+        <ul>
+          <li><strong>I/O 虚拟化：</strong>SR-IOV（PF / VF、Mailbox、MSI-X）、QEMU / KVM、OVS、OpenStack、VPP、RYU；虚拟交换流表卸载与软硬件协同设计。</li>
+          <li><strong>驱动与芯片协同：</strong>DPDK PMD 驱动、Linux 内核网卡驱动、ASIC 芯片驱动、FPGA 卸载、ASIC TOP 原型验证、类 DOCA 软硬件交互平台预研。</li>
+          <li><strong>网络与卸载：</strong>Linux 内核网络栈、DPDK、TC flower、Bonding、XDP、Checksum Offload、RDMA / RoCEv2、VXLAN。</li>
+          <li><strong>硬件平台：</strong>Marvell CN96 板卡移植、ARM SoC 板卡开发、4×10G 标卡。</li>
+          <li><strong>调试与性能：</strong>PCIe Debug、JTAG、KDB、GDB、反汇编、Intel VTune、iPerf、ASan；低延迟链路调优。</li>
+          <li><strong>语言：</strong>C（主力）、C++、Go、Python。</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="experience-title">
+        <h2 id="experience-title">工作经历</h2>
+
+        <article>
+          <h3>星云智联科技有限公司（DPU 创业公司）</h3>
+          <p class="entry-meta"><time datetime="2021-08">2021.08</time> — <time datetime="2023-05">2023.05</time>｜DPU / OVS / FPGA / ASIC / 内核驱动</p>
+          <p>随原团队加入 DPU 创业公司，负责网络转发与软硬件协同研发，绩效位于组内前列。</p>
+          <ul>
+            <li><strong>OVS 流表 FPGA 卸载：</strong>负责虚拟交换流表卸载到 FPGA 的设计与开发，围绕流表存储、同步、老化与报文传输产出多项发明专利。</li>
+            <li><strong>SR-IOV PMD 驱动：</strong>负责 4×10G 标卡项目 PMD 驱动开发，实现 SR-IOV、PF / VF Mailbox 通信与 MSI-X 中断。</li>
+            <li><strong>ASIC 芯片驱动：</strong>负责 Leonis ASIC 芯片内核驱动开发；参与 ASIC TOP 原型验证与类 DOCA 软硬件交互平台预研。</li>
+            <li><strong>硬件卸载能力：</strong>支持 SR-IOV、TC flower、Bonding、XDP、Checksum Offload 等卸载能力。</li>
+            <li><strong>平台移植与调优：</strong>参与 Marvell CN96 板卡移植、ARM SoC 板卡开发、Bootis 转发调优、证券低延迟链路调优与云原生 etcd 监控，支撑客户线上问题定位与修复。</li>
+            <li><strong>开源与分享：</strong>代码合入 openEuler 内核（<a href="https://gitee.com/openeuler/kernel/pulls/570">kernel PR #570</a>、<a href="https://gitee.com/src-openeuler/kernel/pulls/1033">src-openeuler PR #1033</a>）；发起 OVS 源码走读，注释 80% 以上 OVS 源码并输出十余篇技术文档。</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>xxx（远程桌面 / 虚拟化软件厂商）</h3>
+          <p class="entry-meta"><time datetime="2023-05">2023.05</time> — 至今｜服务端 / macOS 客户端 / 远程会话</p>
+          <p>负责虚拟桌面服务端与 macOS 客户端研发。<a href="https://raw.githubusercontent.com/zongyangbigpolo/dazhanxiaokala/main/resume-assets/images/server-code-contributions.jpg" target="_blank" rel="noopener noreferrer">服务端团队业务代码行数全组第一</a>，<a href="https://raw.githubusercontent.com/zongyangbigpolo/dazhanxiaokala/main/resume-assets/images/client-commit-contributions-2025-2026.png" target="_blank" rel="noopener noreferrer" title="统计区间：2025.10.25—2026.10.25">转入客户端团队后代码 commit 全年第一</a>。</p>
+          <ul>
+            <li><strong>GPU 加速与设备重定向：</strong>负责 GPU 加速的 YUV444 编解码、H.264 / H.265 编解码与网络摄像头重定向。</li>
+            <li><strong>虚拟会话传输：</strong>负责 EDT lossy 传输、自适应编码速率、会话带宽检测、DNS 缓存与会话直连优化。</li>
+            <li><strong>部署与运维：</strong>负责 Jamf Pro 远端部署、MDM 配置下发、版本打包与发布升级，支撑客户线上问题定位。</li>
+            <li><strong>工程效率：</strong>搭建多语言覆盖率收集框架；搭建 AI Harness 与自动化测试、崩溃自动分析流程。</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>中新赛克</h3>
+          <p class="entry-meta"><time datetime="2020-06">2020.06</time> — <time datetime="2021-08">2021.08</time>｜平台项目 / 协议解析 / 规则模块</p>
+          <p>平台项目核心组员、规则模块负责人，绩效全组第一。</p>
+          <ul>
+            <li>在网卡上独立移植 Hicut、HFA、RE2 等匹配算法，完成算法与网卡处理链路的适配；参与国产化网卡移植。</li>
+            <li>负责协议解析 Bundle、引擎及规则模块开发，覆盖数据抓取、解析、过滤全链路；负责《代码升级 1.3 项目》中 Bundle、DPP 及全部规则模块代码。</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>新华三技术有限公司 · 安全策略组</h3>
+          <p class="entry-meta"><time datetime="2016-06">2016.06</time> — <time datetime="2020-06">2020.06</time>｜内核转发 / 安全策略 / DPDK 预研</p>
+          <p>维护与集采紧急开发第一责任人，多年绩效位于全组前 20%。</p>
+          <ul>
+            <li>参与虚拟化预研、DPDK 转发预研与移植、业务 Docker 容器化移植。</li>
+            <li>负责内核转发 Cache 优化，以及 IPv6 嵌套报文头解析、ATK 抗 DDoS、ASPF 等模块。</li>
+            <li>独立完成基于 Trie + Hash 的内核五元组掩码匹配算法，作为独立发明人获得专利<a href="https://patents.google.com/patent/CN109951495B/zh">《网段查找方法及装置》（CN109951495B）</a>并获公司嘉奖。</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="recognition-title">
+        <h2 id="recognition-title">专利与软件著作权</h2>
+        <h3>发明专利（DPU / 虚拟交换相关）</h3>
+        <ol class="patent-list">
+          <li><a href="https://patents.google.com/patent/CN114726788B/zh">应用于 DPU 的报文传输方法及相关装置</a></li>
+          <li><a href="https://patents.google.com/patent/CN115277553B/zh">一种流表存储方法、装置、设备和计算机可读存储介质</a></li>
+          <li><a href="https://patents.google.com/patent/CN114448891B/zh">流表同步方法、装置、设备和介质</a></li>
+          <li><a href="https://patents.google.com/patent/CN114915587B/zh">流表老化管理方法及相关设备</a></li>
+          <li><a href="https://patents.google.com/patent/CN114884883B/zh">流量转发方法、装置、设备和存储介质</a></li>
+        </ol>
+        <h3>其他发明专利</h3>
+        <ol class="patent-list">
+          <li><a href="https://patents.google.com/patent/CN115314297B/zh">一种 DDOS 攻击防御方法、装置、设备和存储介质</a></li>
+          <li><a href="https://patents.google.com/patent/CN110474929B/zh">冗余规则检测方法和装置</a></li>
+          <li><a href="https://patents.google.com/patent/CN109951393B/zh">网段搜索方法和装置</a></li>
+          <li><a href="https://patents.google.com/patent/CN109951495B/zh">网段查找方法及装置</a></li>
+        </ol>
+        <h3>软件著作权</h3>
+        <ul>
+          <li>DPDK PMD 驱动网络转发软件 V1.0（2022SR1434483）。</li>
+          <li>封闭开发环境下的代码质量管理软件 V1.0（2022SR1437331）。</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="education-title">
+        <h2 id="education-title">教育背景</h2>
+        <h3>江南大学 · 通信工程</h3>
+        <p class="entry-meta"><time datetime="2012-09">2012.09</time> — <time datetime="2016-06">2016.06</time>｜211 全日制统招本科</p>
+        <ul>
+          <li>2014.11：江苏省机器人大赛团体一等奖；2013.09：大学生创新实践基地大赛二等奖（自动倒车入库小车项目负责人）。</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
