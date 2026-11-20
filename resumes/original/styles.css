@@ -1,0 +1,309 @@
+:root {
+  --page-bg: #f4f4f2;
+  --paper: #ffffff;
+  --ink: #151515;
+  --muted: #686865;
+  --line: #dfdfdc;
+  --accent: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue",
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.resume-doc {
+  display: grid;
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.resume-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 20mm 22mm;
+  background: var(--paper);
+  box-shadow: 0 24px 80px rgb(15 23 42 / 12%);
+}
+
+.top-profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.identity h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 38px;
+  font-weight: 660;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.role {
+  margin: 10px 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 22px;
+  max-width: 580px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  color: #2f2f2f;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.photo-box {
+  display: grid;
+  flex: 0 0 auto;
+  width: 104px;
+  height: 132px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #e2e2df;
+  border-radius: 18px;
+  background: #f2f2f0;
+  color: #9a9a94;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.skills-section,
+.experience-section,
+.project-section,
+.education-section,
+.certificate-section,
+.summary-section,
+.patent-section {
+  margin-top: 24px;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.section-divider::after {
+  display: block;
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+  content: "";
+}
+
+.skill-lines {
+  display: grid;
+  gap: 6px;
+}
+
+.skill-lines p,
+.summary-section p,
+.tool-columns p {
+  margin: 0;
+  color: #303030;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.skill-lines strong {
+  color: var(--accent);
+  font-weight: 680;
+}
+
+.entry {
+  margin-top: 18px;
+}
+
+.entry:first-of-type {
+  margin-top: 0;
+}
+
+.entry-header,
+.education-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.entry-header h2,
+.education-row h2,
+.tool-columns h3 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 680;
+}
+
+.entry-header p,
+.education-row p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.entry-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.subsection-title {
+  margin: 12px 0 0;
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 680;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.28);
+}
+
+time {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.entry ul,
+.award-list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.entry li,
+.award-list li {
+  margin: 6px 0;
+  color: #2c2c2c;
+  font-size: 12.3px;
+  line-height: 1.62;
+}
+
+.tool-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.tool-columns h3,
+.patent-columns h3 {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.patent-columns {
+  display: grid;
+  gap: 14px;
+}
+
+.compact-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.compact-list li {
+  margin: 5px 0;
+  color: #2c2c2c;
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .resume-doc {
+    display: block;
+    padding: 0;
+    gap: 0;
+  }
+
+  .resume-page {
+    width: 210mm;
+    min-height: 0;
+    margin: 0;
+    padding: 12mm 16mm;
+    box-shadow: none;
+  }
+
+  .page-two {
+    break-before: page;
+  }
+
+  .skills-section,
+  .experience-section,
+  .project-section,
+  .education-section,
+  .certificate-section,
+  .summary-section,
+  .patent-section {
+    margin-top: 15px;
+  }
+
+  .section-divider {
+    margin-bottom: 9px;
+  }
+
+  .entry {
+    margin-top: 12px;
+  }
+
+  .entry ul,
+  .award-list {
+    margin-top: 8px;
+  }
+
+  .entry li,
+  .award-list li,
+  .compact-list li {
+    margin: 3px 0;
+    line-height: 1.5;
+  }
+
+  .subsection-title {
+    margin-top: 9px;
+  }
+}
