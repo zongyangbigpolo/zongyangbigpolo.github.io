@@ -331,3 +331,8 @@ time {
 }
 
 .entry-header p a { white-space: nowrap; }
+@media print {
+  .page-one .skill-lines p, .page-one .entry li { line-height: 1.7; }
+  .page-one .entry li { margin: 3px 0; }
+  .page-one .experience-section, .page-one .skills-section { margin-top: 14px; }
+}
